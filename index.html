@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Image Generator with Suraj (STM)</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#customization">Customize</a>
+            <a href="#download">Download</a>
+        </nav>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Unleash Your Creativity with Stunning Images</h1>
+        <button id="generate-cta">Generate Image</button>
+    </section>
+
+    <!-- Image Generation Section -->
+    <section class="image-generation">
+        <h2>Generate Your Image</h2>
+        <label>Image Type:
+            <select id="image-type">
+                <option value="portrait">Portrait</option>
+                <option value="landscape">Landscape</option>
+                <option value="abstract">Abstract</option>
+            </select>
+        </label>
+        <label>Image Size:
+            <input type="text" id="image-size" placeholder="1024x768">
+        </label>
+        <label>Color Palette:
+            <input type="color" id="color-palette">
+        </label>
+        <button id="generate-image">Generate</button>
+        <div id="image-preview"></div>
+    </section>
+
+    <!-- Customization Section -->
+    <section id="customization">
+        <h2>Customize Your Image</h2>
+        <label>Image Filters:
+            <select id="image-filters">
+                <option value="none">None</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="sepia">Sepia</option>
+            </select>
+        </label>
+        <label>Text Overlay:
+            <input type="text" id="text-overlay" placeholder="Enter text...">
+        </label>
+        <label>Font Style:
+            <select id="font-style">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+            </select>
+        </label>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <h2>Download Your Image</h2>
+        <label>File Format:
+            <select id="file-format">
+                <option value="jpeg">JPEG</option>
+                <option value="png">PNG</option>
+                <option value="gif">GIF</option>
+            </select>
+        </label>
+        <label>Image Name:
+            <input type="text" id="image-name" placeholder="image_name">
+        </label>
+        <button id="download-image">Download</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Image Generator. All rights reserved.</p>
+        <p>Contact: surajkstm2007@gmail.com</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
